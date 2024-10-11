@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: white;
+  }
+  
+  #simon-game {
+    text-align: center;
+  }
+  
+  #color-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 15px;
+  }
+  
+  .color {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+  }
+  
+  #red {
+    background-color: red;
+  }
+  
+  #green {
+    background-color: green;
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #yellow {
+    background-color: yellow;
+  }
+  
+  .color.active {
+    opacity: 1;
+  }
+  
+  #controls {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #777;
+  }
+
+  #player-info {
+    margin-bottom: 20px;
+  }
+  
+  #player-info input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #player-info button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #player-info button:hover {
+    background-color: #777;
+  }
+  
+  #scoreboard p {
+    margin: 10px 0;
+  }
+  

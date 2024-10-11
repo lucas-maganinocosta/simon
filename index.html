@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="simon-game">
+    <div id="player-info">
+      <input type="text" id="player-name" placeholder="Escreva o seu nome" />
+      <button id="submit-name-btn">Enviar</button>
+    </div>
+
+    <div id="scoreboard" style="display: none;">
+      <p id="player-greeting">Bem-vindo, <span id="player-display"></span>!</p>
+      <p id="score">Pontuação: <span id="current-score">0</span></p>
+    </div>
+
+    <div id="color-container">
+      <div class="color red" id="red"></div>
+      <div class="color green" id="green"></div>
+      <div class="color blue" id="blue"></div>
+      <div class="color yellow" id="yellow"></div>
+    </div>
+
+    <div id="controls" style="display: none;">
+      <button id="start-btn">Comece o jogo</button>
+      <p id="message">Pressione "Comece o jogo" para começar!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
